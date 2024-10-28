@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Corentin-Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="pic/pp.png" id="logo">
+        <nav>
+            <a href="#main">Home</a>
+            <a href="#profile">About</a>
+            <a href="#social">Projets</a>
+            <a href="#about">Contact</a>
+            <button id="menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div id="container">
+        <section id="main" style="background-image: url(pic/main.jpg);">
+            <h1>Bienvenue sur mon portfolio !</h1>
+        </section>
+        <section id="profile" style="background-image: url(pic/2.jpg);">
+            <h1>About</h1>
+            <div class="card">
+                <p>Je m'appelle Corentin, étudiant en ingénierie informatique avec une passion pour le développement web et les technologies de l'information. Actuellement en formation, je me spécialise dans des domaines comme le développement full stack, la cybersécurité et le DevOps. Ce portfolio présente mes projets, mes compétences et mon parcours. N'hésitez pas à explorer et à me contacter pour en savoir plus !</p>
+            </div>
+        </section>
+        <section id="social" style="background-image: url(pic/plan.jpg);">
+            <div class="content-center">
+                <h1>Projets</h1>
+                <button id="showProjects" class="project-button">Voir Mes Projets</button>
+            </div>
+        </section>
+        
+        <section id="about" style="background-image: url(pic/4.jpg);">
+           
+            <div class="contact-content">
+                <h2>Contactez-moi</h2>
+                <p>Email: corentin.gil@epitech.eu</p>
+                <p>Téléphone: +33 7 85 54 32 46</p>
+                <button id="downloadCV" class="project-button">Télécharger mon CV</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
