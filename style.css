@@ -37,13 +37,13 @@ section::after {
     top: 0;
     left: 0;
     opacity: 0.5;
-    z-index: 1; /* Assurez-vous que le pseudo-élément est derrière le contenu */
+    z-index: 1; 
 }
 
 section h1 {
     font-size: 90px;
     z-index: 2;
-    position: relative; /* Position relative pour z-index */
+    position: relative; 
 }
 
 header {
@@ -209,7 +209,7 @@ header.sticky nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh; /* Assure que la section prend toute la hauteur de la fenêtre */
+    height: 100vh; 
 }
 
 .card {
@@ -217,8 +217,8 @@ header.sticky nav a {
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s;
-    max-width: 600px; /* Limite la largeur de la carte pour une meilleure lisibilité */
-    margin: 20px; /* Ajoute un espace autour de la carte */
+    max-width: 600px; 
+    margin: 20px; 
 }
 
 .card:hover {
@@ -226,7 +226,7 @@ header.sticky nav a {
 }
 
 .card p {   
-    font-size: 20px; /* Augmente la taille de la police du paragraphe */
+    font-size: 20px; 
 }
 
 #showProjects {
@@ -238,7 +238,7 @@ header.sticky nav a {
     border-radius: 5px;
     cursor: pointer;
     position: relative;
-    z-index: 3; /* Pour qu'il soit au-dessus des éléments de fond */
+    z-index: 3; 
     transition: background-color 0.3s ease;
 }
 
@@ -246,7 +246,7 @@ header.sticky nav a {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Styles pour la section "Projets" */
+
 .content-center {
     display: flex;
     flex-direction: column;
@@ -258,8 +258,8 @@ header.sticky nav a {
 }
 
 .content-center h1 {
-    font-size: 100px; /* Ajuste la taille si nécessaire */
-    margin-bottom: 20px; /* Espace entre le titre et le bouton */
+    font-size: 100px; 
+    margin-bottom: 20px; 
 }
 
 .project-button {
@@ -267,7 +267,7 @@ header.sticky nav a {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    background-color: #333; /* Couleur de fond */
+    background-color: #333; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -275,7 +275,7 @@ header.sticky nav a {
 }
 
 .project-button:hover {
-    background-color: #555; /* Couleur au survol */
+    background-color: #555; 
 }
 
 #contact {
@@ -301,7 +301,7 @@ header.sticky nav a {
 }
 
 .contact-content a {
-    color: #0073e6; /* Couleur des liens */
+    color: #0073e6; 
     text-decoration: none;
 }
 
@@ -332,7 +332,7 @@ header.sticky nav a {
     color: #333;
     text-align: center;
     padding: 50px 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 10px;
 }
 
@@ -355,12 +355,12 @@ section::after {
     top: 0;
     left: 0;
     opacity: 0.5;
-    z-index: 1; /* Assurez-vous que le pseudo-élément est derrière le contenu */
+    z-index: 1; 
 }
 
 section h1, .contact-content, .cv-button {
-    z-index: 2; /* Assurez-vous que le contenu est au-dessus du pseudo-élément */
-    position: relative; /* Position relative pour z-index */
+    z-index: 2; 
+    position: relative; 
 }
 
 #mini-apps, #java-projects {
@@ -372,8 +372,8 @@ section h1, .contact-content, .cv-button {
 #mini-apps ul, #java-projects ul {
     list-style-type: none;
     padding: 0;
-    z-index: 2; /* Assurez-vous que la liste est au-dessus du pseudo-élément */
-    position: relative; /* Position relative pour z-index */
+    z-index: 2; 
+    position: relative; 
 }
 
 #mini-apps ul li, #java-projects ul li {
@@ -383,19 +383,45 @@ section h1, .contact-content, .cv-button {
 #mini-apps ul li a, #java-projects ul li a {
     text-decoration: none;
     color: #000;
-    background-color: rgba(255, 255, 255, 0.8); /* Background to ensure text visibility */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
-    z-index: 2; /* Assurez-vous que les liens sont au-dessus du pseudo-élément */
-    position: relative; /* Position relative pour z-index */
+    z-index: 2; 
+    position: relative; 
 }
 #mini-apps ul li p {
     margin: 10px 0 20px 0;
-    color: #fff; /* Couleur du texte */
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
     border-radius: 5px;
-    z-index: 2; /* Assurez-vous que le texte est au-dessus du pseudo-élément */
-    position: relative; /* Position relative pour z-index */
+    z-index: 2; 
+    position: relative; 
+}
+#mini-apps ul li a, #java-projects ul li a {
+    text-decoration: none;
+    color: #fff; 
+    background-color: #28a745; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    display: inline-block;
+    z-index: 2; 
+    position: relative; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#mini-apps ul li a:hover, #java-projects ul li a:hover {
+    background-color: #000000; 
+    transform: scale(1.05); 
+}
+
+#mini-apps ul li p, #java-projects ul li p {
+    margin: 10px 0 20px 0;
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; 
+    position: relative; 
 }
